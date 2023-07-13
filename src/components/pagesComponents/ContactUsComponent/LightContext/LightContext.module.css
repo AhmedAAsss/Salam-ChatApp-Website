@@ -1,0 +1,43 @@
+.LightContext_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem;
+}
+.LightContext {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: start; */
+  gap: 2rem;
+}
+.LightContext p {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 165%;
+}
+.LightContext h4 {
+  margin: 5px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 770px) {
+  .LightContext_container {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .LightContext_container {
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+  }
+  .LightContext p {
+    letter-spacing: 0.2px;
+    line-height: 160%;
+  }
+}

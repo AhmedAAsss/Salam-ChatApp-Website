@@ -1,0 +1,87 @@
+.DarkSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+  padding: 150px 50px;
+  background: linear-gradient(199.99deg, #26292d 7.59%, #12141e 107.11%);
+  /* background: linear-gradient(
+    220.79deg,
+    rgba(0, 133, 255, 0.97) 0.33%,
+    rgba(147, 64, 250, 0.97) 85.46%
+  ); */
+
+  color: white;
+}
+.DarkSection > div {
+  flex: 1;
+}
+.DarkSection_context > div {
+  display: flex;
+  gap: 10px;
+}
+.DarkSection_context label {
+  letter-spacing: 0.8px;
+}
+.DarkSection_context > h2 {
+  font-size: 36px;
+  color: white;
+}
+.DarkSection_context p {
+  color: #00ba94;
+}
+
+/* ?================================== */
+
+.Details_icon {
+  background-color: #424549;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+}
+
+.DetailsGroup h3 {
+  color: white;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+}
+.DetailsGroup p {
+  font-size: 18px;
+  font-weight: 400px;
+  /* letter-spacing: 0.3px; */
+  line-height: 165%;
+  margin-bottom: 30px;
+  color: #a3a5a8;
+}
+
+.DetailsGroup a {
+  color: #a3a5a8;
+}
+
+@media only screen and (max-width: 770px) {
+  .DarkSection {
+    gap: 80px;
+    padding: 80px 40px;
+  }
+  .DarkSection_context > h2 {
+    font-size: 28px;
+  }
+  .DetailsGroup p {
+    font-size: 17px;
+    font-weight: 400px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .DarkSection {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .DarkSection_context > h2 {
+    font-size: 22px;
+  }
+  .DarkSection_context p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,48 @@
+.CheckMark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, transparent 50%, #f4f4f6 0);
+  /* background-color: #f3f3f5; */
+}
+.CheckMark > div {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 16px;
+
+  padding: 32px 48px;
+  min-width: 80%;
+  width: max-content;
+}
+.CheckMark > div > div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .CheckMark > div {
+    flex-wrap: wrap;
+    width: min-content;
+  }
+
+  .CheckMark > div > div {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .CheckMark {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+  .CheckMark > div {
+    padding: 28px 8px;
+    min-width: 100%;
+  }
+  .CheckMark > div > div img {
+    width: 25px !important;
+  }
+}

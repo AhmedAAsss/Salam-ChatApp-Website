@@ -1,0 +1,40 @@
+.TwoSidesSection {
+  display: flex;
+}
+.TwoSidesSection_side {
+  flex: 1;
+  text-align: center;
+  min-height: 850px;
+  background-color: #f3f3f5;
+}
+.TwoSidesSection_side:last-child {
+  background-color: #f3f3f53c;
+}
+.TwoSidesSection_side h1 {
+  margin: 50px 0;
+}
+
+.main_btn {
+  display: inline;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #26292d;
+  border: none;
+  color: #f1f0f3;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 2.2rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 770px) {
+  .TwoSidesSection {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .TwoSidesSection_side h1 {
+    font-size: 24px;
+  }
+}
